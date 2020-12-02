@@ -10,7 +10,7 @@ const weatherReducer = (state = initialState, action) => {
         case DATA_WEATHER_USER: 
             return {
                 ...state,
-                data: action.payload.obj
+                userDataWeather: action.payload.obj
             }
         case CITY_DATA_WEATHER: {
             return {
