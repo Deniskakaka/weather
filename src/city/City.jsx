@@ -9,9 +9,7 @@ function City({ get, weather }) {
     let location = useLocation().pathname.slice(1)
 
     useEffect(() => {
-        if (location !== '') {
-            get(location)
-        }
+        if (location !== '') get(location)
     }, [location])
 
     return (

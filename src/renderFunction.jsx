@@ -33,18 +33,10 @@ function Render(data) {
                     </div>
                 </div> : ''}
             <ul className='list-city'>
-                <li>
-                    <Link to='/Moscow'>Moscow</Link>
-                </li>
-                <li>
-                    <Link to="/Berlin">Berlin</Link>
-                </li>
-                <li>
-                    <Link to="/Tokio">Tokio</Link>
-                </li>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
+                <li><Link to='/Moscow'>Moscow</Link></li>
+                <li><Link to="/Berlin">Berlin</Link></li>
+                <li><Link to="/Tokio">Tokio</Link></li>
+                <li><Link to="/">Home</Link></li>
             </ul>
         </div>
     )
