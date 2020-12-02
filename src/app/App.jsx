@@ -11,8 +11,10 @@ function App() {
     return (
         <Provider store={store}>
             <BrowserRouter>
-                <Route exact path='/' component={Home} />
-                <Route path={location} component={City}></Route>
+                <Switch>
+                    <Route exact path='/' component={Home} />
+                    <Route path={location} component={City}></Route>
+                </Switch>
             </BrowserRouter>
         </Provider>
     )
