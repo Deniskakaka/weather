@@ -1,4 +1,4 @@
-const key = `236b88741fee6986ced463126a1f1471`;
+const key = `385bb862371279441cb92f334060f3bf`;
 const openWeather = 'http://api.openweathermap.org/data/2.5/weather?';
 
 export const FetchWeatherUserCoordinates = (lat, lon) => {
