@@ -6,9 +6,10 @@ import { useLocation } from "react-router-dom";
 import './city.scss';
 
 function City({ get, weather }) {
+    let location = useLocation().pathname.slice(1)
 
     useEffect(() => {
-        get("london")
+        get(location)
     }, [location])
 
     return (
