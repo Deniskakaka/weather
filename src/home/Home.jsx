@@ -40,7 +40,7 @@ class Home extends React.Component {
 }
 
 const mapState = state => ({
-    weather: state.data.data,
+    weather: state.data.userDataWeather,
 })
 
 const mapDispatch = {

@@ -1,7 +1,7 @@
 import { DATA_WEATHER_USER, CITY_DATA_WEATHER } from './weather.actions.js';
 
 const initialState = {
-    data: '',
+    userDataWeather: '',
     cityDataWeather: '',
 }
 
