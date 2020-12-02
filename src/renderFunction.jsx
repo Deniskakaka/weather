@@ -34,7 +34,7 @@ function Render(data) {
                 </div> : ''}
             <ul className='list-city'>
                 <li>
-                    <Link to="/Moscow">Moscow</Link>
+                    <Link to='/Moscow'>Moscow</Link>
                 </li>
                 <li>
                     <Link to="/Berlin">Berlin</Link>
