@@ -7,15 +7,16 @@ function Render(data) {
         <div className="weather-page">
             {data !== ''
                 ? <div className="weather-page-image">
-                    {data.weather !== undefined
-                        ? data.weather[0].main === 'Clouds'
-                            ? <img src="https://img.icons8.com/dusk/64/000000/clouds.png" /> : '' : ''}
-                    {data.weather !== undefined
-                        ? data.weather[0].main === 'Rain'
-                            ? <img src="https://img.icons8.com/officel/80/000000/rain.png" /> : '' : ''}
-                    {data.weather !== undefined
-                        ? data.weather[0].main === 'Clear'
-                            ? <img src="https://img.icons8.com/officel/80/000000/sun.png" /> : '' : ''}
+                    {data.weather[0].main === 'Clouds'
+                        ? <img src="https://img.icons8.com/dusk/64/000000/clouds.png" /> : ''}
+                    {data.weather[0].main === 'Rain'
+                        ? <img src="https://img.icons8.com/officel/80/000000/rain.png" /> : ''}
+                    {data.weather[0].main === 'Clear'
+                        ? <img src="https://img.icons8.com/officel/80/000000/sun.png" /> : ''}
+                    {data.weather[0].main === 'Fog'
+                        ? <img src="https://img.icons8.com/dusk/64/000000/foggy-night-1.png" /> : ''}
+                    {data.weather[0].main === 'Snow'
+                        ? <img src="https://img.icons8.com/dusk/64/000000/snow.png" /> : ''}
                 </div> : ''}
             {data !== ''
                 ? <div className="weather-page-data">
